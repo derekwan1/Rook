@@ -5,10 +5,12 @@ from urllib.request import Request, urlopen
 import os
 from lxml import etree
 import re
+import sys
 
 days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+mappings = {"moffitt": "179", "main_stacks": "174", "anthro": "194"}
 
-site = "http://www.lib.berkeley.edu/hours/calendar?day=" + datetime.date.today().__str__() + "&library_id=179"
+site = "http://www.lib.berkeley.edu/hours/calendar?day=" + datetime.date.today().__str__() + "&library_id=" + mappings[sys.argv[1]]
 hdr = {'User-Agent': 'Mozilla/5.0'}
 req = Request(site,headers=hdr)
 page = urlopen(req)
