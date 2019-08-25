@@ -9,7 +9,8 @@ import sys
 
 days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 mappings = {"moffitt": "179", "main_stacks": "174", "anthro": "194", "art_history": "183", "VLSB": "198", "doe": "173",
-"business": "200", "chemistry": "202", "asian": "206", "engineering": "210"}
+"business": "200", "chemistry": "202", "asian": "206", "engineering": "210", "optometry": "218", "music": "216",
+"morrison": "190", "math": "214", "physics": "220"}
 
 site = "http://www.lib.berkeley.edu/hours/calendar?day=" + datetime.date.today().__str__() + "&library_id=" + mappings[sys.argv[1]]
 hdr = {'User-Agent': 'Mozilla/5.0'}
