@@ -23,5 +23,10 @@ Currently Rook supports:
 10. East Asian library hours
 11. Art history library hours
 12. Doe library hours
+13. Math library hours
+14. Morrison library hours
+15. Music library hours
+16. Optometry library hours
+17. Physics library hours
 
 I will likely expand functionality to other commonly queried locations.
