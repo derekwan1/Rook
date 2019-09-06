@@ -27,8 +27,8 @@ page = urlopen(req)
 soup = BeautifulSoup(page, features="lxml")
 
 lst = soup.select("tr td")
-now = datetime.datetime.today().weekday()
-now = days[now]
+now = str(datetime.datetime.today())
+now = translate_to_text(now[5:10])
 
 k = 0
 while k + 1 < len(lst):
