@@ -1,5 +1,5 @@
 # Rook
-Scrapers for common Berkeley queries
+Lightweight voice assistant that parses Berkeley facility websites to answer questions about open hours.
 
 ### Setup Instructions:  
 Apple scripts unfortunately function only when given absolute paths. Hence, you will need to generate the appropriate scripts using `scrapers/generate_scripts.py`. Pass in the absolute path to the cloned `Rook` directory like so: `python3 generate_scripts.py /Users/YOUR_NAME_HERE/Desktop/Rook`. The program will automatically create a new directory called `scripts` in `Rook` and populate `scripts` with Apple scripts. You can set trigger words to run these scripts with the following steps.
