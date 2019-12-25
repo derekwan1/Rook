@@ -1,13 +1,22 @@
 # Rook
 Scrapers for common Berkeley queries
 
-### Instructions:  
+### Setup Instructions:  
+For MacOS pre-Catalina and earlier:
 1. Go to Settings -> Accessibility -> Dictation -> Dictation Commands -> `+`.  
 2. Type your desired trigger phrase for a particular location (i.e., "what time is the stadium gym open today?")
 3. For "Perform:" select Run workflow -> Other -> Path to the relevant Apple script in this repo.
 
+For Catalina:
+1. Go to Settings -> Accessibility -> Voice Control -> Commands -> `+`.  
+2. Steps 2 and 3 are the same as above.
+
 ### Usage
+For MacOS pre-Catalina and earlier:
 To use Rook, tap the `fn` button twice and hold on the second time. The dictation box should pop up. Say the trigger phrase, and the system will parse the relevant web page and read the answer back to you.
+
+For Catalina:
+Unfortunately, Catalina no longer allows Dictation to run Apple Scripts. Instead, one must manually turn on Voice Control through Settings -> Accessibility -> Voice Control -> Check `Enable Voice Control`. Alternatively, one can turn on Siri and tell it "Turn on voice control"
 
 Currently Rook supports:
 
