@@ -36,6 +36,10 @@ while k + 1 < len(lst):
 	date = tag_text(date)
 	if now in date:
 		times = lst[k + 1]
-		os.system("say \"" + tag_text(times).replace("–", " to ") + "\"")
+		result = tag_text(times).replace("–", " to ")
+		if "closed" in result[:6].lower():
+			os.system("say \"Stadium gym is closed today\"")
+		else:
+			os.system("say \"" + result + "\"")
 		break
 	k += 2

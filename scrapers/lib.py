@@ -58,6 +58,15 @@ while s:
 		start_slice = len("<h6>\n\n") 
 		end_slice = m.index("\n", 6)
 		result = m[start_slice : end_slice]
-		os.system("say \"" + result.replace("-", " to ").replace("am", "a.m.") + "\"")
+		result = result.replace("-", " to ").replace("am", "a.m.")
+
+		# Avoid reading additional HTML when administration inserts reason for being closed
+		if "closed" in result[:6].lower():
+			result = "closed"
+		
+		if result == "closed":
+			os.system("say \"" + sys.argv[1] + " library is closed today\"")
+		else:
+			os.system("say \"" + sys.argv[1] + " hours for today are " + result + "\"")
 		break
 		
