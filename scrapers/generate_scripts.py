@@ -32,3 +32,13 @@ for loc in locs:
 	f.write("end if\n")
 	f.write("activate\n")
 	f.write("end tell")
+
+try:
+	os.system("cd .. && mkdir scripts")
+except Exception:
+	pass
+
+files = os.listdir()
+files = [e for e in files if ".scpt" in e]
+for scpt in files:
+	os.system("mv %s %s%s" % (scpt, "../scripts/", scpt))
