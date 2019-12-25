@@ -39,5 +39,22 @@ Currently Rook supports:
 15. Music library hours
 16. Optometry library hours
 17. Physics library hours
-
-I will likely expand functionality to other commonly queried locations.
+18. BAMPFA library hours
+19. Bancroft library hours
+20. Boalt library hours
+21. Career Center library hours
+22. Visual Resources Center hours
+23. Earth Sciences library hours
+24. Environmental Design library hours
+25. Ethnic Studies library hours
+26. Graduate Services hours
+27. Theology library hours
+28. Governmental Studies library hours
+29. Transportation library hours
+30. Interlibrary Services hours
+31. Media library hours
+32. Newspaper library hours
+33. Northern Regional library hours
+34. Privileges hours
+35. Robbins library hours
+36. Social Research library hours
