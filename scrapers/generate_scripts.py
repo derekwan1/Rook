@@ -6,7 +6,10 @@ if path[-1] != "/":
 	path = path + "/"
 
 locs = ['moffitt', 'main_stacks', 'anthro', 'art_history', 'VLSB', 'doe', 'business', 'chemistry', 
-'asian', 'engineering', 'optometry', 'music', 'morrison', 'math', 'physics', "rsf", "stadium_gym"]
+'asian', 'engineering', 'optometry', 'music', 'morrison', 'math', 'physics', "rsf", "stadium_gym",
+"film", "bancroft", "law", "career", "visual", "earth-sciences", "environmental-design", "ethnic-studies",
+"graduate-services", "theology", "governmental-studies", "transportation", "interlibrary", "media",
+"newspaper", "northern-regional", "privileges", "robbins", "social-research"]
 
 for loc in locs:
 	f = open(loc + ".scpt", "w")

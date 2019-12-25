@@ -10,7 +10,10 @@ import sys
 days = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 mappings = {"moffitt": "179", "main_stacks": "174", "anthro": "194", "art_history": "183", "VLSB": "198", "doe": "173",
 "business": "200", "chemistry": "202", "asian": "206", "engineering": "210", "optometry": "218", "music": "216",
-"morrison": "190", "math": "214", "physics": "220"}
+"morrison": "190", "math": "214", "physics": "220", "film": "251", "bancroft": "196", "law": "242", "career": "259",
+"visual": "228", "earth-sciences": "204", "environmental-design": "212", "ethnic-studies": "232", "graduate-services": "187",
+"theology": "249", "governmental-studies": "236", "transportation": "240", "interlibrary": "188", "media": "189",
+"newspaper": "191", "northern-regional": "254", "privileges": "255", "robbins": "261", "social-research": "224"}
 
 site = "http://www.lib.berkeley.edu/hours/calendar?day=" + datetime.date.today().__str__() + "&library_id=" + mappings[sys.argv[1]]
 hdr = {'User-Agent': 'Mozilla/5.0'}
@@ -67,6 +70,6 @@ while s:
 		if result == "closed":
 			os.system("say \"" + sys.argv[1] + " library is closed today\"")
 		else:
-			os.system("say \"" + sys.argv[1] + " hours for today are " + result + "\"")
+			os.system("say \"" + sys.argv[1] + " library hours for today are " + result + "\"")
 		break
 		
